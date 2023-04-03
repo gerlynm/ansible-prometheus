@@ -1,8 +1,0 @@
-- hosts: localhost
-  become: true
-  roles:
-    - docker
-    - node-exporter
-    - blackbox-exporter
-    - prometheus
-    - grafana
