@@ -7,7 +7,7 @@ services:
     ports:
       - "9115:9115"
     volumes:
-      - /var/lib/blackbox.yml:/etc/blackbox_exporter/blackbox.yml
+      - /var/lib/ansible/blackbox.yml:/etc/blackbox_exporter/blackbox.yml
 
   prometheus:
     image: prom/prometheus
@@ -15,7 +15,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - /var/lib/prometheus.yml:/etc/prometheus/prometheus.yml
+      - /var/lib/ansible/prometheus.yml:/etc/prometheus/prometheus.yml
 
   grafana:
     image: grafana/grafana
