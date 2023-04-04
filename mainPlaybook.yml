@@ -1,0 +1,11 @@
+---
+- name: Ansible Project
+  hosts: all
+  become: true
+  roles:
+    - docker
+    - prerequisite
+    - node-exporter
+    - blackbox-exporter
+    - prometheus
+    - grafana

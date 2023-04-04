@@ -1,0 +1,12 @@
+---
+# tasks file for prometheus
+- name: Start Prometheus container
+  docker_container:
+    name: prometheus
+    image: prom/prometheus
+    state: started
+    restart_policy: always
+    ports:
+      - "9090:9090"
+    volumes:
+      - /var/lib/ansible/prometheus.yml:/etc/prometheus/prometheus.yml
