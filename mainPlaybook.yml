@@ -5,7 +5,4 @@
   roles:
     - docker
     - prerequisite
-    - node-exporter
-    - blackbox-exporter
-    - prometheus
-    - grafana
+    - applications
