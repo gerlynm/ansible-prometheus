@@ -38,6 +38,6 @@
 
     - name: Change to Docker Compose directory and start the Compose file
       become: true
-      command: docker-compose up -d
+      command: docker compose up -d
       args:
         chdir: /var/lib/ansible
